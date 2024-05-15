@@ -1,0 +1,23 @@
+---
+# Localized Policies
+sdwan:
+  policy_objects:
+    color_lists:
+      - name: CL-PRIVATE
+        colors:
+          - mpls
+      - name: CL-INTERNET
+        colors:
+          - biz-internet
+    site_lists:
+      - name: SL-DC
+        site_ids:
+          - 101
+      - name: SL-BRANCH
+        site_id_ranges:
+          - from: 102
+            to: 103
+    vpn_lists:
+      - name: VPN-LAN
+        vpn_ids:
+          - 1

@@ -1,0 +1,166 @@
+---
+# SD-WAN Sites
+sdwan:
+  sites:
+    - id: 101
+      routers:
+        - chassis_id: C8K-307A6671-E857-97DD-ABBB-2D95047E9FED
+          model: C8000V
+          device_template: DT-C8000V-SINGLECPE
+          device_variables:
+            site_id: 101
+            system_ip: 1.1.1.4
+            system_hostname: DC-cEdge
+            logging_server_source_interface: Loopback512
+            ntp_server_source_interface: Loopback512
+            global_cdp_enable: true
+            global_lldp_enable: false
+            snmp_shutdown: false
+            snmp_trap_source_interface: Loopback512
+            snmp_contact: contact@acme.com
+            snmp_location: Location 101
+            system_location: Site101
+            system_description: Site 101 C8KV01
+            system_latitude: 38.1
+            system_longitude: -1.9
+            ondemand_tunnel_enable: false
+            ondemand_tunnel_idle_timeout: 10
+            vpn0_tloc01_if_name: GigabitEthernet1
+            vpn0_tloc01_if_ipv4_address: 100.64.1.4/24
+            vpn0_tloc01_if_description: biz-internet
+            vpn0_tloc01_if_shutdown: false
+            vpn0_tloc01_shaping_rate: 1000000
+            vpn0_tloc01_tunnel_ipsec_preference: 1
+            vpn0_tloc01_tunnel_weight: 1
+            vpn0_tloc01_tunnel_color: biz-internet
+            vpn0_tloc01_tunnel_group: 100
+            vpn0_tloc01_tunnel_restrict: false
+            vpn0_tloc01_tunnel_vmanage_connection_preference: 5
+            vpn0_tloc02_if_name: GigabitEthernet2
+            vpn0_tloc02_if_ipv4_address: 10.10.10.4/24
+            vpn0_tloc02_if_description: MPLS
+            vpn0_tloc02_if_shutdown: false
+            vpn0_tloc02_shaping_rate: 1000000
+            vpn0_tloc02_tunnel_ipsec_preference: 1
+            vpn0_tloc02_tunnel_weight: 1
+            vpn0_tloc02_tunnel_color: mpls
+            vpn0_tloc02_tunnel_group: 200
+            vpn0_tloc02_tunnel_restrict: false
+            vpn0_tloc02_tunnel_vmanage_connection_preference: 5
+            vpn1_int1_if_name: GigabitEthernet4
+            vpn1_int1_if_description: VPN1 DC LAN1
+            vpn1_int1_if_shutdown: false
+            vpn1_int1_if_ipv4_address: 10.0.101.1/24
+            vpn512_int1_if_name: Loopback512
+            vpn512_int1_if_description: mgmt
+            vpn512_int1_if_shutdown: false
+            vpn512_int1_if_ipv4_address: 10.255.254.101/32
+
+    - id: 102
+      routers:
+        - chassis_id: C8K-AD684B39-4D84-8845-C381-DB34050B2642
+          model: C8000V
+          device_template: DT-C8000V-SINGLECPE
+          device_variables:
+            site_id: 102
+            system_ip: 1.1.1.5
+            system_hostname: Branch1-cEdge
+            logging_server_source_interface: Loopback512
+            ntp_server_source_interface: Loopback512
+            global_cdp_enable: true
+            global_lldp_enable: false
+            snmp_shutdown: false
+            snmp_trap_source_interface: Loopback512
+            snmp_contact: contact@acme.com
+            snmp_location: Location 102
+            system_location: Site102
+            system_description: Site 102 C8KV01
+            system_latitude: 50
+            system_longitude: 3
+            ondemand_tunnel_enable: false
+            ondemand_tunnel_idle_timeout: 10
+            vpn0_tloc01_if_name: GigabitEthernet1
+            vpn0_tloc01_if_ipv4_address: 100.64.1.5/24
+            vpn0_tloc01_if_description: biz-internet
+            vpn0_tloc01_if_shutdown: false
+            vpn0_tloc01_shaping_rate: 1000000
+            vpn0_tloc01_tunnel_ipsec_preference: 1
+            vpn0_tloc01_tunnel_weight: 1
+            vpn0_tloc01_tunnel_color: biz-internet
+            vpn0_tloc01_tunnel_group: 100
+            vpn0_tloc01_tunnel_restrict: false
+            vpn0_tloc01_tunnel_vmanage_connection_preference: 5
+            vpn0_tloc02_if_name: GigabitEthernet2
+            vpn0_tloc02_if_ipv4_address: 10.10.10.5/24
+            vpn0_tloc02_if_description: MPLS
+            vpn0_tloc02_if_shutdown: false
+            vpn0_tloc02_shaping_rate: 1000000
+            vpn0_tloc02_tunnel_ipsec_preference: 1
+            vpn0_tloc02_tunnel_weight: 1
+            vpn0_tloc02_tunnel_color: mpls
+            vpn0_tloc02_tunnel_group: 200
+            vpn0_tloc02_tunnel_restrict: false
+            vpn0_tloc02_tunnel_vmanage_connection_preference: 5
+            vpn1_int1_if_name: GigabitEthernet4
+            vpn1_int1_if_description: VPN1 LAN1
+            vpn1_int1_if_shutdown: false
+            vpn1_int1_if_ipv4_address: 10.0.102.1/24
+            vpn512_int1_if_name: Loopback512
+            vpn512_int1_if_description: mgmt
+            vpn512_int1_if_shutdown: false
+            vpn512_int1_if_ipv4_address: 10.255.254.102/32
+
+    - id: 103
+      routers:
+        - chassis_id: C8K-9A08D80B-28EC-D26E-5B30-D9D5CC92FB8C
+          model: C8000V
+          device_template: DT-C8000V-SINGLECPE
+          device_variables:
+            site_id: 103
+            system_ip: 1.1.1.6
+            system_hostname: Branch2-cEdge
+            logging_server_source_interface: Loopback512
+            ntp_server_source_interface: Loopback512
+            global_cdp_enable: true
+            global_lldp_enable: false
+            snmp_shutdown: false
+            snmp_trap_source_interface: Loopback512
+            snmp_contact: contact@acme.com
+            snmp_location: Location 103
+            system_location: Site103
+            system_description: Site 2103 C8KV01
+            system_latitude: 57
+            system_longitude: -2.4
+            ondemand_tunnel_enable: false
+            ondemand_tunnel_idle_timeout: 10
+            vpn0_tloc01_if_name: GigabitEthernet1
+            vpn0_tloc01_if_ipv4_address: 100.64.1.6/24
+            vpn0_tloc01_if_description: biz-internet
+            vpn0_tloc01_if_shutdown: false
+            vpn0_tloc01_shaping_rate: 1000000
+            vpn0_tloc01_tunnel_ipsec_preference: 1
+            vpn0_tloc01_tunnel_weight: 1
+            vpn0_tloc01_tunnel_color: biz-internet
+            vpn0_tloc01_tunnel_group: 100
+            vpn0_tloc01_tunnel_restrict: false
+            vpn0_tloc01_tunnel_vmanage_connection_preference: 5
+            vpn0_tloc02_if_name: GigabitEthernet2
+            vpn0_tloc02_if_ipv4_address: 10.10.10.6/24
+            vpn0_tloc02_if_description: MPLS
+            vpn0_tloc02_if_shutdown: false
+            vpn0_tloc02_shaping_rate: 1000000
+            vpn0_tloc02_tunnel_ipsec_preference: 1
+            vpn0_tloc02_tunnel_weight: 1
+            vpn0_tloc02_tunnel_color: mpls
+            vpn0_tloc02_tunnel_group: 200
+            vpn0_tloc02_tunnel_restrict: false
+            vpn0_tloc02_tunnel_vmanage_connection_preference: 5
+            vpn1_int1_if_name: GigabitEthernet4
+            vpn1_int1_if_description: VPN1 LAN1
+            vpn1_int1_if_shutdown: false
+            vpn1_int1_if_ipv4_address: 10.0.103.1/24
+            vpn512_int1_if_name: Loopback512
+            vpn512_int1_if_description: mgmt
+            vpn512_int1_if_shutdown: false
+            vpn512_int1_if_ipv4_address: 10.255.254.103/32
+
