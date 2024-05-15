@@ -10,7 +10,6 @@ sdwan:
       bfd_template: FT-CEDGE-BFD-01
       cli_template: FT-EDGE-CLI-LOGGING
       global_settings_template: FT-CEDGE-GLOBAL-01
-#      localized_policy: LOCAL-POLICY-TEMPLATE-01
       logging_template: FT-CEDGE-LOGGING-01
       ntp_template: FT-CEDGE-NTP-01
       omp_template: FT-CEDGE-OMP-01
