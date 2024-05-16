@@ -1,7 +1,4 @@
 terraform {
-  cloud {
-    organization = "example_corp"
-  }
 }
 
 module "sdwan" {
