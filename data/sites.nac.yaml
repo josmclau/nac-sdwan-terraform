@@ -34,7 +34,7 @@ sdwan:
             vpn0_tloc01_tunnel_weight: 1
             vpn0_tloc01_tunnel_color: biz-internet
             vpn0_tloc01_tunnel_group: 100
-            vpn0_tloc01_tunnel_restrict: false
+            vpn0_tloc01_tunnel_restrict: true
             vpn0_tloc01_tunnel_vmanage_connection_preference: 5
             vpn0_tloc02_if_name: GigabitEthernet2
             vpn0_tloc02_if_ipv4_address: 10.10.10.101/24
@@ -45,7 +45,7 @@ sdwan:
             vpn0_tloc02_tunnel_weight: 1
             vpn0_tloc02_tunnel_color: mpls
             vpn0_tloc02_tunnel_group: 200
-            vpn0_tloc02_tunnel_restrict: false
+            vpn0_tloc02_tunnel_restrict: true
             vpn0_tloc02_tunnel_vmanage_connection_preference: 5
             vpn1_int1_if_name: GigabitEthernet4
             vpn1_int1_if_description: VPN1 DC LAN1
@@ -88,7 +88,7 @@ sdwan:
             vpn0_tloc01_tunnel_weight: 1
             vpn0_tloc01_tunnel_color: biz-internet
             vpn0_tloc01_tunnel_group: 100
-            vpn0_tloc01_tunnel_restrict: false
+            vpn0_tloc01_tunnel_restrict: true
             vpn0_tloc01_tunnel_vmanage_connection_preference: 5
             vpn0_tloc02_if_name: GigabitEthernet2
             vpn0_tloc02_if_ipv4_address: 10.10.10.102/24
@@ -99,7 +99,7 @@ sdwan:
             vpn0_tloc02_tunnel_weight: 1
             vpn0_tloc02_tunnel_color: mpls
             vpn0_tloc02_tunnel_group: 200
-            vpn0_tloc02_tunnel_restrict: false
+            vpn0_tloc02_tunnel_restrict: true
             vpn0_tloc02_tunnel_vmanage_connection_preference: 5
             vpn1_int1_if_name: GigabitEthernet4
             vpn1_int1_if_description: VPN1 LAN1
@@ -142,7 +142,7 @@ sdwan:
             vpn0_tloc01_tunnel_weight: 1
             vpn0_tloc01_tunnel_color: biz-internet
             vpn0_tloc01_tunnel_group: 100
-            vpn0_tloc01_tunnel_restrict: false
+            vpn0_tloc01_tunnel_restrict: true
             vpn0_tloc01_tunnel_vmanage_connection_preference: 5
             vpn0_tloc02_if_name: GigabitEthernet2
             vpn0_tloc02_if_ipv4_address: 10.10.10.103/24
@@ -153,7 +153,7 @@ sdwan:
             vpn0_tloc02_tunnel_weight: 1
             vpn0_tloc02_tunnel_color: mpls
             vpn0_tloc02_tunnel_group: 200
-            vpn0_tloc02_tunnel_restrict: false
+            vpn0_tloc02_tunnel_restrict: true
             vpn0_tloc02_tunnel_vmanage_connection_preference: 5
             vpn1_int1_if_name: GigabitEthernet4
             vpn1_int1_if_description: VPN1 LAN1
