@@ -9,7 +9,7 @@ sdwan:
           device_template: DT-C8000V-SINGLECPE
           device_variables:
             site_id: 101
-            system_ip: 1.1.1.4
+            system_ip: 1.1.1.101
             system_hostname: DC-cEdge
             logging_server_source_interface: Loopback512
             ntp_server_source_interface: Loopback512
@@ -26,7 +26,7 @@ sdwan:
             ondemand_tunnel_enable: false
             ondemand_tunnel_idle_timeout: 10
             vpn0_tloc01_if_name: GigabitEthernet1
-            vpn0_tloc01_if_ipv4_address: 100.64.1.4/24
+            vpn0_tloc01_if_ipv4_address: 100.64.1.101/24
             vpn0_tloc01_if_description: biz-internet
             vpn0_tloc01_if_shutdown: false
             vpn0_tloc01_shaping_rate: 1000000
@@ -37,7 +37,7 @@ sdwan:
             vpn0_tloc01_tunnel_restrict: false
             vpn0_tloc01_tunnel_vmanage_connection_preference: 5
             vpn0_tloc02_if_name: GigabitEthernet2
-            vpn0_tloc02_if_ipv4_address: 10.10.10.4/24
+            vpn0_tloc02_if_ipv4_address: 10.10.10.101/24
             vpn0_tloc02_if_description: MPLS
             vpn0_tloc02_if_shutdown: false
             vpn0_tloc02_shaping_rate: 1000000
@@ -63,7 +63,7 @@ sdwan:
           device_template: DT-C8000V-SINGLECPE
           device_variables:
             site_id: 102
-            system_ip: 1.1.1.5
+            system_ip: 1.1.1.102
             system_hostname: Branch1-cEdge
             logging_server_source_interface: Loopback512
             ntp_server_source_interface: Loopback512
@@ -80,7 +80,7 @@ sdwan:
             ondemand_tunnel_enable: false
             ondemand_tunnel_idle_timeout: 10
             vpn0_tloc01_if_name: GigabitEthernet1
-            vpn0_tloc01_if_ipv4_address: 100.64.1.5/24
+            vpn0_tloc01_if_ipv4_address: 100.64.1.102/24
             vpn0_tloc01_if_description: biz-internet
             vpn0_tloc01_if_shutdown: false
             vpn0_tloc01_shaping_rate: 1000000
@@ -91,7 +91,7 @@ sdwan:
             vpn0_tloc01_tunnel_restrict: false
             vpn0_tloc01_tunnel_vmanage_connection_preference: 5
             vpn0_tloc02_if_name: GigabitEthernet2
-            vpn0_tloc02_if_ipv4_address: 10.10.10.5/24
+            vpn0_tloc02_if_ipv4_address: 10.10.10.102/24
             vpn0_tloc02_if_description: MPLS
             vpn0_tloc02_if_shutdown: false
             vpn0_tloc02_shaping_rate: 1000000
@@ -117,7 +117,7 @@ sdwan:
           device_template: DT-C8000V-SINGLECPE
           device_variables:
             site_id: 103
-            system_ip: 1.1.1.6
+            system_ip: 1.1.1.103
             system_hostname: Branch2-cEdge
             logging_server_source_interface: Loopback512
             ntp_server_source_interface: Loopback512
@@ -134,7 +134,7 @@ sdwan:
             ondemand_tunnel_enable: false
             ondemand_tunnel_idle_timeout: 10
             vpn0_tloc01_if_name: GigabitEthernet1
-            vpn0_tloc01_if_ipv4_address: 100.64.1.6/24
+            vpn0_tloc01_if_ipv4_address: 100.64.1.103/24
             vpn0_tloc01_if_description: biz-internet
             vpn0_tloc01_if_shutdown: false
             vpn0_tloc01_shaping_rate: 1000000
@@ -145,7 +145,7 @@ sdwan:
             vpn0_tloc01_tunnel_restrict: false
             vpn0_tloc01_tunnel_vmanage_connection_preference: 5
             vpn0_tloc02_if_name: GigabitEthernet2
-            vpn0_tloc02_if_ipv4_address: 10.10.10.6/24
+            vpn0_tloc02_if_ipv4_address: 10.10.10.103/24
             vpn0_tloc02_if_description: MPLS
             vpn0_tloc02_if_shutdown: false
             vpn0_tloc02_shaping_rate: 1000000
